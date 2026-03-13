@@ -205,3 +205,37 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project datasets
+data/raw/
+data/processed/
+
+# Large dataset files
+*.csv
+*.tsv
+*.zip
+*.jsonl
+
+# Machine learning models
+models/
+*.h5
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# Logs
+logs/
+*.log
+
+# Kaggle API credentials
+.kaggle/
+kaggle.json
+
+# Experiment tracking
+mlruns/
+wandb/
+
+# Temporary files
+tmp/
+temp/
