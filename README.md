@@ -27,4 +27,4 @@ notebooks/ – experimentation
 - Marielle Datu – NLP preprocessing
 - Jasmine Magtanong – Data preprocessing & EDA
 - Masato Martin – CNN model
-- Ivan Salamt – Reinforcement Learning
+- Ivan Louis Salamat – Reinforcement Learning
