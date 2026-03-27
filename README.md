@@ -27,13 +27,13 @@ helpify-ai/
 
 ## Features
 
-✅ **AI-Powered Chat** - Conversations with Claude AI
-✅ **Intent Classification** - 8 customer support intents recognized
-✅ **ML Pipeline Visualization** - Watch the processing pipeline animate
-✅ **Q-Learning RL** - Reinforcement learning agent optimizes actions
-✅ **Real-time Analytics** - Intent distribution, reward curves, Q-table
-✅ **Mock Mode** - Works without API key (uses template responses)
-✅ **Live API Mode** - Optionally connect to Claude API
+- ✅ **AI-Powered Chat** - Conversations with Claude AI
+- ✅ **Intent Classification** - 8 customer support intents recognized
+- ✅ **ML Pipeline Visualization** - Watch the processing pipeline animate
+- ✅ **Q-Learning RL** - Reinforcement learning agent optimizes actions
+- ✅ **Real-time Analytics** - Intent distribution, reward curves, Q-table
+- ✅ **Mock Mode** - Works without API key (uses template responses)
+- ✅ **Live API Mode** - Optionally connect to Claude API
 
 ## Quick Start
 
