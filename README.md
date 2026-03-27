@@ -5,24 +5,68 @@ A fully functional intelligent customer support chatbot powered by Claude AI wit
 ## Project Structure
 
 ```
-helpify-ai/
-├── index.html              # Main entry point (open this in browser)
-├── css/
-│   └── styles.css         # All styling
-├── js/
-│   ├── app.js             # Main app initialization
-│   ├── state.js           # State management
-│   ├── api.js             # API calls & fallback responses
-│   ├── ml.js              # Machine learning & RL
-│   ├── ui.js              # UI rendering & charts
-│   └── chat.js            # Chat message handling
-├── config/
-│   └── config.json        # Configuration settings
+``
+project/
+├── README.md                 # This file
+├── LICENSE
+├── requirements.txt          # Dependencies
+├── run.sh                    # One-command reproducibility
+├── setup.py
+│
 ├── data/
-│   └── responses.json     # Response templates & features
-├── lib/                   # (For future libraries)
-├── assets/                # (For future images/icons)
-└── .git/                  # Version control
+│   ├── README.md            # Dataset documentation
+│   ├── raw/                 # Original datasets
+│   ├── processed/           # Cleaned data
+│   └── get_data.py          # Dataset fetcher
+│
+├── src/
+│   ├── __init__.py
+│   ├── data_pipeline.py     # Preprocessing
+│   ├── train.py             # Training script
+│   ├── eval.py              # Evaluation script
+│   ├── demo.py              # Interactive demo
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── text_cnn.py      # Text-CNN model
+│   │   ├── baseline.py      # Baseline model
+│   │   └── response_gen.py  # Response generation
+│   ├── rl/
+│   │   ├── __init__.py
+│   │   ├── q_learning.py    # Q-Learning agent
+│   │   └── envs.py          # RL environment
+│   └── utils/
+│       ├── __init__.py
+│       ├── metrics.py       # Evaluation metrics
+│       ├── visualization.py # Plotting
+│       └── config.py        # Configuration
+│
+├── notebooks/
+│   ├── 01_eda.ipynb         # Exploratory Data Analysis
+│   ├── 02_preprocessing.ipynb
+│   └── 03_model_comparison.ipynb
+│
+├── experiments/
+│   ├── configs/
+│   │   ├── baseline.yaml       # Baseline config
+│   │   ├── text_cnn.yaml       # CNN config
+│   │   └── rl_agent.yaml       # RL config
+│   ├── logs/                   # Training logs
+│   └── results/
+│       ├── rl_training_history.json
+│       ├── text_cnn_results.json
+│       ├─   text_cnn_confusion_matrix.npy
+│   
+│
+├── docs/
+│   ├── proposal.pdf          # Project proposal
+│   ├── checkpoint.pdf        # Midpoint checkpoint
+│   ├── final_report.pdf      # Final report
+│   ├── slides.pdf            # Presentation
+│   ├── model_card.md         # Model documentation
+│   ├── ethics_statement.md   # Ethics & policy
+│   └── DATASET.md            # Data documentation
+│
+└── .gitignore
 ```
 
 ## Features
