@@ -79,36 +79,53 @@ project/
 - ✅ **Mock Mode** - Works without API key (uses template responses)
 - ✅ **Live API Mode** - Optionally connect to Claude API
 
+Here’s a cleanly **organized Quick Start guide** with the **direct browser method presented as the alternative** to the Local Browser Server:
+
+---
+
 ## Quick Start
 
-### 1. **Open in Browser**
+### 1. **Run with a Local Browser Server (Recommended)**
+
+If you prefer running a local HTTP server:
+
+1. Change directory to your project folder:
+
+   ```bash
+   cd <your-project-folder>
+   ```
+2. Start a simple Python server:
+
+   ```bash
+   python -m http.server 8000 --bind 127.0.0.1
+   ```
+3. Open [http://localhost:8000](http://localhost:8000) in your browser to run the app.
+
+### 2. **Alternative: Open Directly in Browser**
+
 Simply open `index.html` in any modern web browser. The app works immediately with mock responses.
 
-### 2. **Enable Live Claude API (Optional)**
+### 3. **Enable Live Claude API (Optional)**
+
 To use actual Claude AI responses:
+
 1. Get an API key from [console.anthropic.com](https://console.anthropic.com)
 2. In the browser console, run:
+
    ```javascript
    App.setApiKey('sk-your-api-key-here')
    ```
-3. Start chatting - responses now come from Claude
+3. Start chatting – responses now come from Claude.
 
-### 3. **Test It Out**
-- Click "Say hello" or any quick prompt
-- Watch the ML Pipeline animate
-- See intents get classified
-- Track rewards in the curve
-- Clear and start over with the "Clear Conversation" button
+### 4. **Test It Out**
 
-4. Alternative Local Browser Server
-If you prefer running a local HTTP server:
+* Click "Say hello" or any quick prompt
+* Watch the ML pipeline animate
+* See intents get classified
+* Track rewards in the curve
+* Clear and start over with the "Clear Conversation" button
 
-- cd Helpify-AI-main
-- python -m http.server 8000 --bind 127.0.0.1 or
-- python -m http.server 8000
-- Open http://localhost:8000 in a browser
-
-
+---
 
 ## Configuration
 
