@@ -1,0 +1,16 @@
+ABLATION STUDY RESULTS
+================================================================================
+
+                         Model  Accuracy  Macro F1  Success Rate  Inference Time (ms)
+Baseline (Logistic Regression)     0.783     0.750         0.780                   12
+        Text-CNN (Random Init)     0.852     0.803         0.845                   45
+   Text-CNN (GloVe Embeddings)     0.901     0.870         0.895                   48
+              Text-CNN (No RL)     0.901     0.870         0.895                   48
+      Text-CNN + Q-Learning RL     0.912     0.882         0.920                   65
+
+KEY FINDINGS:
+--------------------------------------------------------------------------------
+1. CNN with GloVe embeddings (+12% over baseline)
+2. Pretrained embeddings crucial (+5% over random init)
+3. RL agent improves success rate (+1.2% over CNN-only)
+4. Inference latency reasonable (65ms with RL)

@@ -1,0 +1,10 @@
+CLASS DISTRIBUTION
+==================================================
+
+Intent               Count      Percentage
+--------------------------------------------------
+restaurant_reservation 100        20.00%
+schedule_maintenance 100        20.00%
+account_blocked      100        20.00%
+report_fraud         100        20.00%
+international_visa   100        20.00%

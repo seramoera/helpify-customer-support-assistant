@@ -1,0 +1,10 @@
+SUMMARY STATISTICS
+==================================================
+
+Total Rows: 500
+Unique Intents: 5
+Mean Token Length: 10.586
+Median Token Length: 10.0
+Std Dev Token Length: 3.1173771154867227
+Mean Sentiment: -0.04576600000000001
+Missing Values: 0

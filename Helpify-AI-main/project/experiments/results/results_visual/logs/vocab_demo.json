@@ -1,0 +1,15 @@
+{
+  "<PAD>": 0,
+  "<UNK>": 1,
+  "arrived": 2,
+  "cancel": 3,
+  "hello": 4,
+  "help": 5,
+  "order": 6,
+  "package": 7,
+  "please": 8,
+  "product": 9,
+  "refund": 10,
+  "terrible": 11,
+  "want": 12
+}

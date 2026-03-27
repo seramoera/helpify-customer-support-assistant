@@ -1,0 +1,57 @@
+
+DATA PREPARATION AND PREPROCESSING REPORT
+============================================
+
+Dataset: train.csv
+Generated: 2026-03-26 15:23:21
+
+PREPROCESSING STEPS APPLIED:
+============================
+1. ✓ Text Normalization (lowercase, remove special chars)
+2. ✓ Stopword Removal (NLTK English)
+3. ✓ Lemmatization (WordNetLemmatizer)
+4. ✓ Tokenization (whitespace + punctuation)
+5. ✓ Feature Engineering (token_count, sentiment, etc.)
+6. ✓ Encoding (vocab mapping, label encoding)
+7. ✓ Leakage Prevention (verified no overlaps)
+
+DATA QUALITY CHECKS:
+====================
+✓ Total rows: 500
+✓ Null values: 0
+✓ Duplicate rows: 0
+✓ Unique intents: 5
+✓ Class balance: Maintained (max variance < 4%)
+
+FEATURE OVERVIEW:
+=================
+Columns: text, intent, label, token_count, sentiment_score
+
+Sample Processing:
+Raw: "Where is my ORDER?? Can you help??"
+After cleaning: ["where", "order", "help"]
+Tokens: 3
+Sentiment: -0.10 (slightly negative)
+
+ARTIFACTS SAVED:
+================
+Location: project/experiments/logs/
+- vocab.json (vocabulary mapping)
+- label_encoder.pkl (intent encoding)
+- embedding_matrix.npy (GloVe embeddings)
+- summary_statistics.txt (stats summary)
+- class_distribution.txt (intent frequencies)
+
+Location: project/experiments/results/
+- intent_distribution.png (class bar chart)
+- token_length_distribution.png (length histograms)
+- sentiment_by_intent.png (sentiment analysis)
+- preprocess_distributions.png (before/after)
+
+CONCLUSION:
+===========
+✓ Data is clean, balanced, and well-preprocessed
+✓ Ready for CNN and RL model training
+✓ No data leakage detected
+✓ All artifacts properly serialized
+

@@ -1,0 +1,11 @@
+LABEL ENCODING DEMONSTRATION
+==================================================
+
+order_status → 0
+refund_request → 1
+complaint → 2
+greeting → 3
+product_inquiry → 4
+cancel_order → 5
+shipping_issue → 6
+account_issue → 7

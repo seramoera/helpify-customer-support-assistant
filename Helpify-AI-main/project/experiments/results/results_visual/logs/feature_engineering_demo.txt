@@ -1,0 +1,17 @@
+FEATURE ENGINEERING DEMONSTRATION
+==================================================
+
+                                      text intent  token_count  char_count  contains_question_mark  contains_exclamation  sentiment_score  has_number
+           Where is my order? Please help! sample            3          31                    True                  True           0.6476       False
+I want a refund for this terrible product! sample            4          42                   False                  True          -0.5599       False
+                 Hello, how are you today? sample            2          25                    True                 False           0.0000       False
+          My package hasn't arrived yet!!! sample            4          32                   False                  True           0.0000       False
+           Can you cancel my order please? sample            3          31                    True                 False           0.0772       False
+
+Features Added:
+- token_count: Number of tokens after preprocessing
+- char_count: Total character count
+- contains_question_mark: Boolean flag for questions
+- contains_exclamation: Boolean flag for exclamations
+- sentiment_score: VADER compound sentiment (-1 to +1)
+- has_number: Boolean flag for numeric content
